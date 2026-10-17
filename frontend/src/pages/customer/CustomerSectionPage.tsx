@@ -1,0 +1,3 @@
+import { useParams } from "react-router";
+import { Heading } from "../../components/ui/Heading";
+export function CustomerSectionPage({ title }: { title: string }) { const { id } = useParams(); return <><header className="dashboard-top"><h1>{title}</h1></header><div className="management-card account-detail"><Heading eyebrow={id ? `ORDER ${id}` : "YOUR ACCOUNT"} title={id ? "Order details" : title} text={id ? "Confirmed items preserve purchase-time price, size, SKU, and quantity." : `Manage your ${title.toLowerCase()} securely.`} />{id && <div className="order-detail-line"><span>Celeste Draped Dress</span><b>Size S · Qty 1</b><strong>$189.00</strong></div>}</div></>; }

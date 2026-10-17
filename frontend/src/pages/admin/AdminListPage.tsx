@@ -1,0 +1,4 @@
+import { Link } from "react-router";
+import { Heading } from "../../components/ui/Heading";
+import { products } from "../../lib/catalog";
+export function AdminListPage({ title }: { title: string }) { return <><header className="dashboard-top"><h1>{title}</h1></header><div className="admin-title-row"><Heading eyebrow="STORE MANAGEMENT" title={title} text={`Static demo ${title.toLowerCase()} data.`} />{title === "Products" && <Link className="button button--primary" to="/admin/products/new">Add product</Link>}</div><div className="management-card">{products.map((p) => <article className="management-row" key={p.id}><img src={p.image} alt="" /><div><b>{p.name}</b><span>{p.category.name} · {p.variants.length} variants</span></div><strong>${p.price}</strong><span className="table-status">{p.status}</span>{title === "Products" && <Link to={`/admin/products/${p.id}/edit`}>Edit</Link>}</article>)}</div></>; }

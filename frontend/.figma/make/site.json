@@ -1,0 +1,10 @@
+{
+  "description": "A premium, responsive fashion e-commerce platform offering elegant shopping, personalized customer dashboards, and efficient admin management for seamless retail operations.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

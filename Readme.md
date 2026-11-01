@@ -502,3 +502,7 @@ By the end of this project, I aim to be able to:
 7. Introduce Docker and automated testing early.
 
 **Development principle:** Build incrementally, understand every important line of code, test each feature, and document decisions as the project evolves.
+
+
+
+am just trying to test git status and git diff
